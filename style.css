@@ -1,0 +1,110 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 550;
+  font-style: normal;
+  box-sizing: border-box;
+}
+h2 {
+  text-align: center;
+  color: #b10dc9;
+  text-shadow: 0 0 5px #b10dc9, 0 0 10px #b10dc9, 0 0 20px #ff00ff,
+    0 0 40px #ff00ff;
+  letter-spacing: 2px;
+}
+.time {
+  text-align: center;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  font-weight: bold;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(-180deg, #0a0f2c, #001f3f, #0047ab, #00ffff);
+  background-size: 300%, 300%;
+  animation: color 15s ease-in-out infinite;
+}
+.container2 {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  margin: auto;
+  display: flex;
+}
+.frame {
+  width: 30%;
+  height: 80%;
+  margin: 10px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid rgb(5, 125, 238);
+}
+.frame1 {
+  width: 80%;
+  height: 30%;
+  background-color: #0a0f2c;
+  border: 1px solid #0047ab;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 5px;
+  font-size: 12px;
+}
+.frame2 {
+  width: 100%;
+  height: 100%;
+  color: #39ff14;
+
+  letter-spacing: 0.5px;
+  font-size: 11px;
+  padding: 10px;
+  list-style: none;
+  overflow-wrap: break-word;
+}
+.gray {
+  color: #aab6c2;
+  font-weight: bold;
+}
+.frame2 ul {
+  list-style: none;
+}
+.frame1 span p,
+.frame2 p {
+  color: #ffffff;
+  text-shadow: 0 0 2px #ffffff, 0 0 4px #ffffff;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+.frame1 li {
+  color: #aab6c2;
+  list-style: none;
+  margin: 2.5px;
+}
+.space {
+  display: flex;
+  gap: 40px;
+  color: rgb(187, 184, 184);
+}
+.disks {
+  display: flex;
+  gap: 20px;
+}
+.green {
+  color: rgb(6, 247, 6);
+}
+
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}

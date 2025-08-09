@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>System Health Report</title>
+        <link rel="stylesheet" href="style.css">
+    <body>
+        <div class="container">
+            <h2>SYSTEM HEALTH REPORT</h2>
+            <p class="time"> {{TIME}} </p>
+            <div class="container2">
+                <div class="frame">
+                    <div class="frame1">
+                        <span><p>System Information</p></span>
+                        <ul>
+                            <li>Host-Name: {{HOST}}</li>
+                            <li>OS-Name: {{OS}}</li>
+                            <li>Version: {{VERSION}}</li>
+                            <li>Build: {{BUILD}}</li>
+                        </ul>
+                    </div>
+                     <div class="frame1">
+                        <span><p>CPU Usage</p></span>
+                        <ul>
+                            <li>CPU-Name: {{MODEL}}</li>
+                            <li>Load-Percentage: {{LOAD}}%</li>
+                            <li>Cores: {{CORES}}</li>
+                            <li>Logical-Processors: {{LOG}}</li>
+                        </ul>
+                    </div>
+                     <div class="frame1">
+                        <span><p>Memory Usage</p></span>
+                         <ul>
+                            <li>Total: {{TPM}}GB</li>
+                            <li>Available: {{APM}}GB</li>
+                            <li>Used: {{UPM}}GB</li>
+                            <li>Usage-Percentage: {{MUP}}%</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="frame">
+                     <div class="frame1">
+                        <span><p>Disk Health : <span class="green">{{HEALTH}}</span></p></span>
+                        <div class="space">
+                            <p>Available</p>
+                            <p>Used</p>
+                            </div>
+                            <div class="disks">
+                                  <ul>
+                            <li>C: {{C}}GB</li>
+                            <li>D: {{D}}MB</li>
+                            <li>E: {{E}}MB</li>
+                            <li>F: {{F}}MB</li>
+                        </ul>
+                          <ul>
+                            <li>C: {{CC}}GB</li>
+                            <li>D: {{DD}}MB</li>
+                            <li>E: {{EE}}MB</li>
+                            <li>F: {{FF}}GB</li>
+                        </ul>
+
+                            </div>
+                            
+                       
+
+                    </div>
+                     <div class="frame1">
+                        <span><p>System Uptime</p></span>
+                        <ul>
+                            <li>LastBoot-Time: {{LASTBOOT}}</li>
+                            <li>Uptime: {{UPTIME}}</li>
+                        </ul>
+                    </div>
+                     <div class="frame1">
+                        <span><p>Network Status: <span class="green">{{STATUS}}</span></p></span>
+                         <ul>
+                            <li>IP-Address: {{IP}}</li>
+                            <li>Interface: {{NETNAME}}</li>
+                            <li>Connection-Speed: {{SPEED}}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="frame">
+                    <div class="frame2">
+                         <p>Event Logs</p>
+                          <ul>
+                            <li><span class="gray">Index:</span> {{INDEX}}</li>
+                            <li><span class="gray">EntryType:</span> {{ENTRY}}</li>
+                            <li><span class="gray">Source:</span> {{SOURCE}}</li>
+                            <li><span class="gray">Instance Id:</span> {{INSTANCE}}</li>
+                            <li><span class="gray">Time-Generated:</span> {{TME}}</li>
+                            <li><span class="gray">UserName:</span> {{USER}}</li>
+                            <li><span class="gray">MachineName:</span> {{MACNAME}}</li>
+                            <li><span class="gray">Message:</span> {{MSG}}</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
