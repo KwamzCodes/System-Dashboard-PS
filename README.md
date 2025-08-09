@@ -93,7 +93,7 @@ $freeMemory = (Get-CimInstance Win32_OperatingSystem).FreePhysicalMemory/1MB
 
 To dive deeper - check source code.
 
-![Image 08-08-2025 at 18.11.jpeg](BUILDING%20A%20REAL-TIME%20SYSTEM%20HEALTH%20DASHBOARD%20WITH%20%202492b90cbf228055b807df5ff778e0d9/Image_08-08-2025_at_18.11.jpeg)
+![Image 08-08-2025 at 18.11.jpeg](Screenshots/Image_08-08-2025_at_18.11.jpeg)
 
 ### Exporting Data to HTML
 
