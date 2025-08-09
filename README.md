@@ -117,7 +117,7 @@ $html | Out-File "reportFile" -Encoding utf8
 
 **reportFile:** is the output file, that renders script in a web browser.
 
-![Image 08-08-2025 at 18.11.jpeg](BUILDING%20A%20REAL-TIME%20SYSTEM%20HEALTH%20DASHBOARD%20WITH%20%202492b90cbf228055b807df5ff778e0d9/Image_08-08-2025_at_18.11%201.jpeg)
+![Image 08-08-2025 at 18.11.jpeg](Screenshots/Image_08-08-2025_at_18.11%201.jpeg)
 
 ### Styling with CSS
 
@@ -129,27 +129,27 @@ I created a separated CSS file and linked it to the HTML file using this syntax:
 
 In the CSS file, I styled the page to my preference. I animated the background and gave it a dark-blue futuristic theme.
 
-![Image 08-08-2025 at 18.17.jpeg](BUILDING%20A%20REAL-TIME%20SYSTEM%20HEALTH%20DASHBOARD%20WITH%20%202492b90cbf228055b807df5ff778e0d9/Image_08-08-2025_at_18.17.jpeg)
+![Image 08-08-2025 at 18.17.jpeg](Screenshots/Image_08-08-2025_at_18.17.jpeg)
 
 ### Automation with Task Scheduler
 
 - In my task scheduler, under the actions section in the top right panel. I chose **“Create Basic Task”**
 
-![Image 08-08-2025 at 18.21.jpeg](BUILDING%20A%20REAL-TIME%20SYSTEM%20HEALTH%20DASHBOARD%20WITH%20%202492b90cbf228055b807df5ff778e0d9/Image_08-08-2025_at_18.21.jpeg)
+![Image 08-08-2025 at 18.21.jpeg](Screenshots/Image_08-08-2025_at_18.21.jpeg)
 
 - In the “Create Basic Task” menu , I gave the script I want to automate a name.
 
-![Image 08-08-2025 at 18.23.jpeg](BUILDING%20A%20REAL-TIME%20SYSTEM%20HEALTH%20DASHBOARD%20WITH%20%202492b90cbf228055b807df5ff778e0d9/Image_08-08-2025_at_18.23.jpeg)
+![Image 08-08-2025 at 18.23.jpeg](Screenshots/Image_08-08-2025_at_18.23.jpeg)
 
 - Now in the “Trigger” menu, I was asked when i want to start the automation. I chose daily to always get real-time and updated data. Since I chose daily, I set the time to when the automation should start.
 
-![Image 08-08-2025 at 18.27.jpeg](BUILDING%20A%20REAL-TIME%20SYSTEM%20HEALTH%20DASHBOARD%20WITH%20%202492b90cbf228055b807df5ff778e0d9/Image_08-08-2025_at_18.27.jpeg)
+![Image 08-08-2025 at 18.27.jpeg](Screenshots/Image_08-08-2025_at_18.27.jpeg)
 
-![Image 08-08-2025 at 18.29.jpeg](BUILDING%20A%20REAL-TIME%20SYSTEM%20HEALTH%20DASHBOARD%20WITH%20%202492b90cbf228055b807df5ff778e0d9/Image_08-08-2025_at_18.29.jpeg)
+![Image 08-08-2025 at 18.29.jpeg](Screenshots/Image_08-08-2025_at_18.29.jpeg)
 
 - The “Action” menu is what you want the task to do, I chose to “start a program” since we are dealing with a script here.
 
-![Image 08-08-2025 at 18.31.jpeg](BUILDING%20A%20REAL-TIME%20SYSTEM%20HEALTH%20DASHBOARD%20WITH%20%202492b90cbf228055b807df5ff778e0d9/Image_08-08-2025_at_18.31.jpeg)
+![Image 08-08-2025 at 18.31.jpeg](Screenshots/Image_08-08-2025_at_18.31.jpeg)
 
 - In the “Start a Program” menu, i entered Powershell as the script I want to run. In the “Add arguments” text bar, I wrote a script to bypass or ignore every restrictions to be able to run the script successfully.
 
@@ -159,15 +159,15 @@ Syntax:
 -ExcecutionPolicy Bypass -File "path to HTML file"
 ```
 
-![Image 08-08-2025 at 18.40.jpeg](BUILDING%20A%20REAL-TIME%20SYSTEM%20HEALTH%20DASHBOARD%20WITH%20%202492b90cbf228055b807df5ff778e0d9/Image_08-08-2025_at_18.40.jpeg)
+![Image 08-08-2025 at 18.40.jpeg](Screenshots/Image_08-08-2025_at_18.40.jpeg)
 
 - The final part is the summary menu which shows you want you have done so far. I was okay with it and clicked on **“Finish”**
 
-![Image 08-08-2025 at 18.40 (1).jpeg](BUILDING%20A%20REAL-TIME%20SYSTEM%20HEALTH%20DASHBOARD%20WITH%20%202492b90cbf228055b807df5ff778e0d9/Image_08-08-2025_at_18.40_(1).jpeg)
+![Image 08-08-2025 at 18.40 (1).jpeg](Screenshots/Image_08-08-2025_at_18.40_(1).jpeg)
 
 In my task creation, I wasn't  given an option to set a time interval for the task to be repeated. So I after creating the task, I located the file and navigated to the Trigger section on the top panel. In the Trigger menu I clicked on Edit. It opened a menu as shown in the image below:
 
-![Image 08-08-2025 at 18.52.jpeg](BUILDING%20A%20REAL-TIME%20SYSTEM%20HEALTH%20DASHBOARD%20WITH%20%202492b90cbf228055b807df5ff778e0d9/Image_08-08-2025_at_18.52.jpeg)
+![Image 08-08-2025 at 18.52.jpeg](Screenshots/Image_08-08-2025_at_18.52.jpeg)
 
 I checked “Repeat task every” and set it 15mins. This means my script will run every 15 mins.
 
@@ -177,10 +177,10 @@ Now to see if the task I created was successfully working, i had to manually run
 
 I located my file and clicked “Run” in the actions panel on the right side.
 
-![Image 08-08-2025 at 18.55.jpeg](BUILDING%20A%20REAL-TIME%20SYSTEM%20HEALTH%20DASHBOARD%20WITH%20%202492b90cbf228055b807df5ff778e0d9/Image_08-08-2025_at_18.55.jpeg)
+![Image 08-08-2025 at 18.55.jpeg](Screenshots/Image_08-08-2025_at_18.55.jpeg)
 
 My script run successfully as expected!!
 
 ### FINAL RESULT
 
-![Image 08-08-2025 at 19.01.jpeg](BUILDING%20A%20REAL-TIME%20SYSTEM%20HEALTH%20DASHBOARD%20WITH%20%202492b90cbf228055b807df5ff778e0d9/Image_08-08-2025_at_19.01.jpeg)
+![Image 08-08-2025 at 19.01.jpeg](Screenshots/Image_08-08-2025_at_19.01.jpeg)
