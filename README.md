@@ -97,7 +97,7 @@ To dive deeper - check source code.
 
 ### Exporting Data to HTML
 
- In HTML, I created placholders to accept the values from pwsh. I made sure to get the content of the html file in powershell by using this syntax:
+ In HTML, creatE placholders to accept the values from pwsh. Make sure to get the content of the html file in powershell by using this syntax:
 
 ```powershell
 $html = Get-Content "C:\Users\Mikel\Desktop\index.html" -Raw
@@ -105,9 +105,9 @@ $html = Get-Content "C:\Users\Mikel\Desktop\index.html" -Raw
 
 **Get-Content:** gets the data from the html file
 
-**-Raw:** makes sure to get the content in the exact form, unedited, unmodified.
+**-Raw:** gets the content in the exact form, unedited, unmodified.
 
-After getting the contents in HTML (the placeholders), I assigned the various system metrics data to each placeholder. After replacing the values. I exported the HTML file to the output file. 
+After getting the contents in HTML (the placeholders), assign the various system metrics data to each placeholder. After replacing the values, exporte the HTML file to the output file. 
 
 Syntax:
 
@@ -121,37 +121,37 @@ $html | Out-File "reportFile" -Encoding utf8
 
 ### Styling with CSS
 
-I created a separated CSS file and linked it to the HTML file using this syntax:
+Create a separate CSS file and link it to the HTML file using this syntax:
 
 ```html
 <link rel="stylesheet" href="style.css"
 ```
 
-In the CSS file, I styled the page to my preference. I animated the background and gave it a dark-blue futuristic theme.
+In the CSS file, style the page to your preference. I animated the background and gave it a dark-blue futuristic theme.
 
 ![Image 08-08-2025 at 18.17.jpeg](Screenshots/Image_08-08-2025_at_18.17.jpeg)
 
 ### Automation with Task Scheduler
 
-- In my task scheduler, under the actions section in the top right panel. I chose **“Create Basic Task”**
+- In the task scheduler, under the actions section in the top right panel. Choose **“Create Basic Task”**
 
 ![Image 08-08-2025 at 18.21.jpeg](Screenshots/Image_08-08-2025_at_18.21.jpeg)
 
-- In the “Create Basic Task” menu , I gave the script I want to automate a name.
+- In the “Create Basic Task” menu , give the script you want to automate a name.
 
 ![Image 08-08-2025 at 18.23.jpeg](Screenshots/Image_08-08-2025_at_18.23.jpeg)
 
-- Now in the “Trigger” menu, I was asked when i want to start the automation. I chose daily to always get real-time and updated data. Since I chose daily, I set the time to when the automation should start.
+- Now in the “Trigger” menu, you will be asked when you want to start the automation. Choose daily to always get real-time and updated data. You will then be given the option set the time to when the automation should start.
 
 ![Image 08-08-2025 at 18.27.jpeg](Screenshots/Image_08-08-2025_at_18.27.jpeg)
 
 ![Image 08-08-2025 at 18.29.jpeg](Screenshots/Image_08-08-2025_at_18.29.jpeg)
 
-- The “Action” menu is what you want the task to do, I chose to “start a program” since we are dealing with a script here.
+- The “Action” menu is what you want the task to do, choose “start a program” since we are dealing with a script here.
 
 ![Image 08-08-2025 at 18.31.jpeg](Screenshots/Image_08-08-2025_at_18.31.jpeg)
 
-- In the “Start a Program” menu, i entered Powershell as the script I want to run. In the “Add arguments” text bar, I wrote a script to bypass or ignore every restrictions to be able to run the script successfully.
+- In the “Start a Program” menu, enter powershell as the script you want to run. In the “Add arguments” text bar, write a script to bypass or ignore every restrictions to be able to run the script successfully.
 
 Syntax:
 
@@ -161,25 +161,24 @@ Syntax:
 
 ![Image 08-08-2025 at 18.40.jpeg](Screenshots/Image_08-08-2025_at_18.40.jpeg)
 
-- The final part is the summary menu which shows you want you have done so far. I was okay with it and clicked on **“Finish”**
+- The final part is the summary menu which shows you want you have done so far. Review your selections and click **“Finish”**
 
 ![Image 08-08-2025 at 18.40 (1).jpeg](Screenshots/Image_08-08-2025_at_18.40_(1).jpeg)
 
-In my task creation, I wasn't  given an option to set a time interval for the task to be repeated. So I after creating the task, I located the file and navigated to the Trigger section on the top panel. In the Trigger menu I clicked on Edit. It opened a menu as shown in the image below:
+In your task creation, you will not be given an option to set a time interval for the task to be repeated. So after creating the task, locate the file and navigate to the Trigger section on the top panel. In the Trigger menu, click on Edit. It will open a menu as shown in the image below:
 
 ![Image 08-08-2025 at 18.52.jpeg](Screenshots/Image_08-08-2025_at_18.52.jpeg)
 
-I checked “Repeat task every” and set it 15mins. This means my script will run every 15 mins.
+Check “Repeat task every” and set it 15mins. This means your script will run every 15 mins.
 
 ### Testing
 
-Now to see if the task I created was successfully working, i had to manually run the task. 
+Now to see if the task you created was successfully working, you will have to manually run the task. 
 
-I located my file and clicked “Run” in the actions panel on the right side.
+Locate your file and click “Run” in the actions panel on the right side.
 
 ![Image 08-08-2025 at 18.55.jpeg](Screenshots/Image_08-08-2025_at_18.55.jpeg)
 
-My script run successfully as expected!!
 
 ### FINAL RESULT
 
